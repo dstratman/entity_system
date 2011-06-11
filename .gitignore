@@ -37,3 +37,5 @@ Thumbs.db
 ##############
 */CMakeFiles/
 /CMakeFiles
+CMakeCache.txt
+*.cmake
