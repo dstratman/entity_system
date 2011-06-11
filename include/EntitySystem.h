@@ -7,15 +7,15 @@
 class EntitySystem
 {
 public:
-	EntitySystem();
-	void initialize();
+   EntitySystem();
+   void initialize();
 protected:
-	//virtual void begin();
-	//virtual void end();
-	virtual void processEntities();
-	//virtual bool checkProcessing();
-	//virtual void added(int e);
-	EntityManager* mEntityManager;
+   //virtual void begin();
+   //virtual void end();
+   virtual void processEntities();
+   //virtual bool checkProcessing();
+   //virtual void added(int e);
+   EntityManager* mEntityManager;
 private:
 };
 

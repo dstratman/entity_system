@@ -4,6 +4,12 @@ IF (WIN32)
 ADD_DEFINITIONS(-DNOMINMAX)
 ENDIF (WIN32)
 
+FIND_PACKAGE(SDL REQUIRED)
+FIND_PACKAGE(SDL_image REQUIRED)
+if(NOT SDL_FOUND )
+  message(FATAL_ERROR "SDL not found!")
+endif ( NOT SDL_FOUND )
+
 INCLUDE_DIRECTORIES(
   ${CMAKE_CURRENT_SOURCE_DIR}/../../include/
 )
@@ -11,6 +17,7 @@ INCLUDE_DIRECTORIES(
 SET(APP_HEADERS
   Components.h
   Systems.h
+  EntityFactory.h
 )
 
 SET(APP_SOURCES
@@ -22,6 +29,8 @@ ADD_EXECUTABLE(${APP_NAME}
 )
 
 TARGET_LINK_LIBRARIES(${APP_NAME} entity_system
+ 		      ${SDL_LIBRARY}
+                      SDLmain
 )
 
 IF (MSVC_IDE)

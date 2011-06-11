@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/starwarrior.dir/main.cpp.o  -o ../../bin/starwarrior -rdynamic ../../lib/libentity_system.so /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.so -lpthread -lSDLmain -Wl,-rpath,/home/daniel/code/entity_system/lib:/usr/local/lib 

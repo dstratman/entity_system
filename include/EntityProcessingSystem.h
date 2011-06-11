@@ -8,10 +8,10 @@ class EntityProcessingSystem : public EntitySystem
 {
 public:
 protected:
-	virtual void process(int e);
-	void processEntities(std::vector<int> mAllEntities, float timeDelta);
-	bool checkProcessing() { return true; }
-	float mDelta;
+   virtual void process(int e);
+   void processEntities(std::vector<int> mAllEntities, float timeDelta);
+   bool checkProcessing() { return true; }
+   float mDelta;
 };
 
 #endif

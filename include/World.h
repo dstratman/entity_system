@@ -8,20 +8,20 @@
 class World
 {
 public:
-	World();
+   World();
 
-	int createEntity();
-	void removeEntity(int e);
-	void setDelta(int delta) { mDelta = delta; }
-	int getDelta() { return mDelta; }
-	void loopStart();
-	
+   int createEntity();
+   void removeEntity(int e);
+   void setDelta(int delta) { mDelta = delta; }
+   int getDelta() { return mDelta; }
+   void loopStart();
+   
 private:
-	EntityManager* mEntityManager;
-	TagManager* mTagManager;
-	SystemManager* mSystemManager;
+   EntityManager* mEntityManager;
+   TagManager* mTagManager;
+   SystemManager* mSystemManager;
 
-	int mDelta;
+   int mDelta;
 };
 
 #endif

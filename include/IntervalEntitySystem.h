@@ -6,12 +6,12 @@
 class IntervalEntitySystem : public EntitySystem
 {
 protected:
-	bool checkProcessing()
-	{
-	}
+   bool checkProcessing()
+   {
+   }
 private:
-	int mAcc;
-	int mInterval;
+   int mAcc;
+   int mInterval;
 };
 
 #endif

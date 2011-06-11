@@ -2,14 +2,14 @@
 
 World::World()
 {
-	mEntityManager = EntityManager::getSingletonPtr();
-	mTagManager = TagManager::getSingletonPtr();
+   mEntityManager = EntityManager::getSingletonPtr();
+   mTagManager = TagManager::getSingletonPtr();
 }
 int World::createEntity()
 {
-	return mEntityManager->createEntity();
+   return mEntityManager->createEntity();
 }
 void World::removeEntity(int e)
 {
-	mEntityManager->removeEntity(e);
+   mEntityManager->removeEntity(e);
 }

@@ -9,23 +9,23 @@
 class TagManager
 {
 public:
-	~TagManager(void);
+   ~TagManager(void);
 
-	void AddTag(std::string tag, int e);
-	void RemoveTag(std::string);
+   void AddTag(std::string tag, int e);
+   void RemoveTag(std::string);
 
-	bool isRegistered(std::string tag);
-	int getEntity(std::string tag);
+   bool isRegistered(std::string tag);
+   int getEntity(std::string tag);
 
-	static TagManager* getSingletonPtr(void);
+   static TagManager* getSingletonPtr(void);
 private:
-	TagManager( void );
-	TagManager( const TagManager& ) { }
-	TagManager & operator = ( const TagManager& );
+   TagManager( void );
+   TagManager( const TagManager& ) { }
+   TagManager & operator = ( const TagManager& );
 
-	std::map<std::string, int> mEntityByTag;
+   std::map<std::string, int> mEntityByTag;
 
-	static TagManager *mTagManager;
+   static TagManager *mTagManager;
 };
 
 #endif

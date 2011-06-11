@@ -9,21 +9,21 @@
 class SystemManager
 {
 public:
-	~SystemManager(void);
+   ~SystemManager(void);
 
-	void initializeAll();
-	void addSystem(EntitySystem system);
-	void removeSystem(EntitySystem system);
+   void initializeAll();
+   void addSystem(EntitySystem system);
+   void removeSystem(EntitySystem system);
 
-	static SystemManager* getSingletonPtr(void);
+   static SystemManager* getSingletonPtr(void);
 private:
-	SystemManager( void );
-	SystemManager( const SystemManager& ) { }
-	SystemManager & operator = ( const SystemManager& );
+   SystemManager( void );
+   SystemManager( const SystemManager& ) { }
+   SystemManager & operator = ( const SystemManager& );
 
-	std::vector<EntitySystem> mAllSystems;
+   std::vector<EntitySystem> mAllSystems;
 
-	static SystemManager *mSystemManager;
+   static SystemManager *mSystemManager;
 };
 
 #endif

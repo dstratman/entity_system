@@ -8,28 +8,28 @@ TagManager::TagManager(void)
 
 void TagManager::AddTag(std::string tag, int e)
 {
-	mEntityByTag.insert(std::pair<std::string,int>(tag, e));
+   mEntityByTag.insert(std::pair<std::string,int>(tag, e));
 }
 
 void TagManager::RemoveTag(std::string tag)
 {
-	mEntityByTag.erase(tag);
+   mEntityByTag.erase(tag);
 }
 
 bool TagManager::isRegistered(std::string tag)
 {
-	return false;
+   return false;
 }
 
 int TagManager::getEntity(std::string tag)
 {
-	return 0;
+   return 0;
 }
 
 TagManager* TagManager::getSingletonPtr( void ) 
 {
     if( !mTagManager ) 
-	{
+   {
         mTagManager = new TagManager();
     }
 

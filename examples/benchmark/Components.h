@@ -5,7 +5,7 @@
 
 typedef enum ComponentType
 {
-	CTransform2DType
+   CTransform2DType
 } ComponentType;
 
 /*
@@ -13,8 +13,8 @@ CTransform2D Component
 */
 struct CTransform2D : public Component
 {
-	static const int familyId = CTransform2DType;
-	float mX, mY, mRotation;
+   static const int familyId = CTransform2DType;
+   float mX, mY, mRotation;
 };
 
 #endif
