@@ -8,6 +8,10 @@ INCLUDE_DIRECTORIES(
   ${CMAKE_CURRENT_SOURCE_DIR}/../../include/
 )
 
+SET(APP_HEADERS
+  Components.h
+)
+
 SET(APP_SOURCES
   main.cpp
 )

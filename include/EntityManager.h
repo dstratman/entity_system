@@ -41,24 +41,24 @@ public:
 	
 	template<class T> void addComponent(int entity, T* comp)
 	{
-		mComponentStore[T::familyId].insert(std::pair<int, T*>(entity, comp));
+		mComponentStore[(int)T::familyId].insert(std::pair<int, T*>(entity, comp));
 	}
 	
 	template<class T> void removeComponent(int entity, T* comp)
 	{
-		mComponentStore[T::familyId].remove(std::pair<int, T*>(entity, comp));
+		mComponentStore[(int)T::familyId].erase(std::pair<int, T*>(entity, comp));
 	}
 
 	template<class T> void getEntities(std::set<int> &result)
 	{
-		std::map<int, Component*> m = mComponentStore[T::familyId];
+		std::map<int, Component*> m = mComponentStore[(int)T::familyId];
 		for(std::map<int, Component*>::iterator it = m.begin(); it != m.end(); ++ it)
 			result.insert(it->first);
 	}
 	
 	template<class T> T *getComponent(int entity)
 	{
-		std::map<int, Component*> &store = mComponentStore[T::familyId];
+		std::map<int, Component*> &store = mComponentStore[(int)T::familyId];
 		return (T*)store[entity];
 	}
 };

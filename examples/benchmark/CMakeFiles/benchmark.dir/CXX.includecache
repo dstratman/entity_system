@@ -6,3 +6,35 @@
 
 #IncludeRegexTransform: 
 
+/home/daniel/code/entity_system/examples/benchmark/Components.h
+Component.h
+/home/daniel/code/entity_system/examples/benchmark/Component.h
+
+/home/daniel/code/entity_system/examples/benchmark/main.cpp
+iostream
+-
+stdio.h
+-
+EntityManager.h
+/home/daniel/code/entity_system/examples/benchmark/EntityManager.h
+Components.h
+/home/daniel/code/entity_system/examples/benchmark/Components.h
+
+examples/benchmark/../../include/Component.h
+
+examples/benchmark/../../include/EntityManager.h
+vector
+-
+iterator
+-
+algorithm
+-
+climits
+-
+set
+-
+map
+-
+Component.h
+examples/benchmark/../../include/Component.h
+

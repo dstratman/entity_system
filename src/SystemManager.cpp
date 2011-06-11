@@ -10,16 +10,10 @@ void SystemManager::initializeAll()
 
 void SystemManager::addSystem(EntitySystem system)
 {
-	//std::vector<EntitySystem>::iterator it = std::find(mAllSystems.begin(), mAllSystems.end(), system);
-
-	//if (it == mAllSystems.end())
 	mAllSystems.insert(mAllSystems.end(), system);
 }
 
 void SystemManager::removeSystem(EntitySystem system)
 {
-	//std::vector<EntitySystem>::iterator it = std::find(mAllSystems.begin(), mAllSystems.end(), system);
 
-	//if (it != mAllSystems.end())
-	//mAllSystems.erase(it);
 }
