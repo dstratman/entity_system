@@ -109,30 +109,6 @@ entity_system/fast:
 	cd /home/daniel/code/entity_system && $(MAKE) -f src/CMakeFiles/entity_system.dir/build.make src/CMakeFiles/entity_system.dir/build
 .PHONY : entity_system/fast
 
-ComponentManager.o: ComponentManager.cpp.o
-.PHONY : ComponentManager.o
-
-# target to build an object file
-ComponentManager.cpp.o:
-	cd /home/daniel/code/entity_system && $(MAKE) -f src/CMakeFiles/entity_system.dir/build.make src/CMakeFiles/entity_system.dir/ComponentManager.cpp.o
-.PHONY : ComponentManager.cpp.o
-
-ComponentManager.i: ComponentManager.cpp.i
-.PHONY : ComponentManager.i
-
-# target to preprocess a source file
-ComponentManager.cpp.i:
-	cd /home/daniel/code/entity_system && $(MAKE) -f src/CMakeFiles/entity_system.dir/build.make src/CMakeFiles/entity_system.dir/ComponentManager.cpp.i
-.PHONY : ComponentManager.cpp.i
-
-ComponentManager.s: ComponentManager.cpp.s
-.PHONY : ComponentManager.s
-
-# target to generate assembly for a file
-ComponentManager.cpp.s:
-	cd /home/daniel/code/entity_system && $(MAKE) -f src/CMakeFiles/entity_system.dir/build.make src/CMakeFiles/entity_system.dir/ComponentManager.cpp.s
-.PHONY : ComponentManager.cpp.s
-
 EntityManager.o: EntityManager.cpp.o
 .PHONY : EntityManager.o
 
@@ -286,9 +262,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... entity_system"
 	@echo "... rebuild_cache"
-	@echo "... ComponentManager.o"
-	@echo "... ComponentManager.i"
-	@echo "... ComponentManager.s"
 	@echo "... EntityManager.o"
 	@echo "... EntityManager.i"
 	@echo "... EntityManager.s"

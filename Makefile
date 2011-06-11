@@ -108,6 +108,19 @@ entity_system/fast:
 	$(MAKE) -f src/CMakeFiles/entity_system.dir/build.make src/CMakeFiles/entity_system.dir/build
 .PHONY : entity_system/fast
 
+#=============================================================================
+# Target rules for targets named benchmark
+
+# Build rule for target.
+benchmark: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 benchmark
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	$(MAKE) -f examples/benchmark/CMakeFiles/benchmark.dir/build.make examples/benchmark/CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -117,6 +130,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... entity_system"
+	@echo "... benchmark"
 .PHONY : help
 
 

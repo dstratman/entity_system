@@ -4,3 +4,7 @@ EntitySystem::EntitySystem()
 {
 
 }
+
+void EntitySystem::initialize()
+{
+}
