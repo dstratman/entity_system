@@ -36,3 +36,4 @@ Thumbs.db
 # CMake logs #
 ##############
 */CMakeFiles/
+/CMakeFiles
