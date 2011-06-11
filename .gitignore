@@ -36,6 +36,9 @@ Thumbs.db
 # CMake logs #
 ##############
 */CMakeFiles/
+*.make
+*.includecache
+*.internal
 /CMakeFiles
 CMakeCache.txt
 *.cmake

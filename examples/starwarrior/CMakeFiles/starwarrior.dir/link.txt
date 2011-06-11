@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/starwarrior.dir/main.cpp.o  -o ../../bin/starwarrior -rdynamic ../../lib/libentity_system.so -Wl,-rpath,/home/daniel/code/entity_system/lib 
