@@ -11,3 +11,4 @@ SET(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
 ADD_SUBDIRECTORY(src)
 ADD_SUBDIRECTORY(examples/benchmark)
+ADD_SUBDIRECTORY(examples/starwarrior)

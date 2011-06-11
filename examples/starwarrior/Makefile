@@ -66,14 +66,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/code/entity_system/CMakeFiles /home/daniel/code/entity_system/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/daniel/code/entity_system && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/code/entity_system/CMakeFiles /home/daniel/code/entity_system/examples/starwarrior/CMakeFiles/progress.marks
+	cd /home/daniel/code/entity_system && $(MAKE) -f CMakeFiles/Makefile2 examples/starwarrior/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/code/entity_system/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/daniel/code/entity_system && $(MAKE) -f CMakeFiles/Makefile2 examples/starwarrior/clean
 .PHONY : clean
 
 # The main clean target
@@ -82,57 +82,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/daniel/code/entity_system && $(MAKE) -f CMakeFiles/Makefile2 examples/starwarrior/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/daniel/code/entity_system && $(MAKE) -f CMakeFiles/Makefile2 examples/starwarrior/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/daniel/code/entity_system && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named entity_system
+# Convenience name for target.
+examples/starwarrior/CMakeFiles/starwarrior.dir/rule:
+	cd /home/daniel/code/entity_system && $(MAKE) -f CMakeFiles/Makefile2 examples/starwarrior/CMakeFiles/starwarrior.dir/rule
+.PHONY : examples/starwarrior/CMakeFiles/starwarrior.dir/rule
 
-# Build rule for target.
-entity_system: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 entity_system
-.PHONY : entity_system
-
-# fast build rule for target.
-entity_system/fast:
-	$(MAKE) -f src/CMakeFiles/entity_system.dir/build.make src/CMakeFiles/entity_system.dir/build
-.PHONY : entity_system/fast
-
-#=============================================================================
-# Target rules for targets named benchmark
-
-# Build rule for target.
-benchmark: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 benchmark
-.PHONY : benchmark
-
-# fast build rule for target.
-benchmark/fast:
-	$(MAKE) -f examples/benchmark/CMakeFiles/benchmark.dir/build.make examples/benchmark/CMakeFiles/benchmark.dir/build
-.PHONY : benchmark/fast
-
-#=============================================================================
-# Target rules for targets named starwarrior
-
-# Build rule for target.
-starwarrior: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 starwarrior
+# Convenience name for target.
+starwarrior: examples/starwarrior/CMakeFiles/starwarrior.dir/rule
 .PHONY : starwarrior
 
 # fast build rule for target.
 starwarrior/fast:
-	$(MAKE) -f examples/starwarrior/CMakeFiles/starwarrior.dir/build.make examples/starwarrior/CMakeFiles/starwarrior.dir/build
+	cd /home/daniel/code/entity_system && $(MAKE) -f examples/starwarrior/CMakeFiles/starwarrior.dir/build.make examples/starwarrior/CMakeFiles/starwarrior.dir/build
 .PHONY : starwarrior/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/daniel/code/entity_system && $(MAKE) -f examples/starwarrior/CMakeFiles/starwarrior.dir/build.make examples/starwarrior/CMakeFiles/starwarrior.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/daniel/code/entity_system && $(MAKE) -f examples/starwarrior/CMakeFiles/starwarrior.dir/build.make examples/starwarrior/CMakeFiles/starwarrior.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/daniel/code/entity_system && $(MAKE) -f examples/starwarrior/CMakeFiles/starwarrior.dir/build.make examples/starwarrior/CMakeFiles/starwarrior.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -142,9 +141,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... entity_system"
-	@echo "... benchmark"
 	@echo "... starwarrior"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -156,6 +156,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/daniel/code/entity_system && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

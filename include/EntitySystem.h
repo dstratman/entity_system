@@ -1,7 +1,7 @@
 #ifndef ENTITY_SYSTEM_H
 #define ENTITY_SYSTEM_H
 
-//#include "EntityManager.h"
+#include "EntityManager.h"
 //#include "Component.h"
 
 class EntitySystem
@@ -15,7 +15,7 @@ protected:
 	virtual void processEntities();
 	//virtual bool checkProcessing();
 	//virtual void added(int e);
-	//EntityManager* mEntityManager;
+	EntityManager* mEntityManager;
 private:
 };
 

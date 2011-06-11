@@ -16,9 +16,11 @@ SET(LIB_PUBLIC_HEADERS
   ${HEADER_PATH}/EntityManager.h
   ${HEADER_PATH}/EntityProcessingSystem.h
   ${HEADER_PATH}/EntitySystem.h
+  ${HEADER_PATH}/FastMath.h
   ${HEADER_PATH}/IntervalEntitySystem.h
   ${HEADER_PATH}/SystemManager.h
   ${HEADER_PATH}/TagManager.h
+  ${HEADER_PATH}/Utils.h
   ${HEADER_PATH}/World.h
 
 )
