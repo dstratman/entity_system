@@ -1,11 +1,10 @@
 #ifndef ENTITY_MANAGER_H
 #define ENTITY_MANAGER_H
 
-#include <unordered_map>
 #include <vector>
 #include <iterator>
 #include <algorithm>
-#include <limits>
+#include <climits>
 #include <set>
 #include <map>
 #include "Component.h"
