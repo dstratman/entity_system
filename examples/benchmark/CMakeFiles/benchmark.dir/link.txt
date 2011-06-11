@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/benchmark.dir/main.cpp.o  -o ../../bin/benchmark -rdynamic ../../lib/libentity_system.so -Wl,-rpath,/home/daniel/code/entity_system/lib 
